@@ -4,88 +4,112 @@
     "versions": [
       {
         "version": "v1",
-        "createdAt": null,
-        "updatedAt": null,
+        "createdAt": "2025-03-15",
+        "updatedAt": "2025-03-15",
         "status": "draft",
-        "analyst": "",
+        "analyst": "AI",
 
         "salesInput": {
-          "salesPerson": "",
+          "salesPerson": "待确认",
           "overallAssessment": {
-            "customerIntent": "",
-            "projectUrgency": "",
-            "budgetSituation": "",
-            "competitionStatus": "",
-            "winProbability": "",
-            "keyObstacles": [],
-            "confidenceLevel": ""
+            "customerIntent": "初期接触阶段，客户提出仓储管理系统需求，信息较少待进一步挖掘",
+            "projectUrgency": "待评估",
+            "budgetSituation": "待确认",
+            "competitionStatus": "未知",
+            "winProbability": "待评估",
+            "keyObstacles": ["信息不完整，需进一步沟通"],
+            "confidenceLevel": "低"
           },
           "keyPersons": [],
           "realNeeds": {
-            "explicitNeeds": [],
-            "implicitNeeds": [],
-            "suspectedNeeds": []
+            "explicitNeeds": ["仓储管理系统"],
+            "implicitNeeds": ["可能与现有SAP系统打通", "可能与5G数字化车间集成"],
+            "suspectedNeeds": ["库存实时可视化", "出入库管理", "物料追溯"]
           },
           "decisionFactors": {
-            "primaryFactor": "",
+            "primaryFactor": "待确认",
             "secondaryFactors": [],
             "dealBreakers": []
           },
-          "notes": ""
+          "notes": "客户仅表达想做仓储管理系统，具体业务场景、功能范围、预算规模均需进一步沟通"
         },
 
-        "pendingQuestions": [],
+        "pendingQuestions": [
+          "仓储范围：原材料库、半成品库、成品库、备件库？",
+          "核心痛点：库存不准、找货慢、呆滞料多、账实不符？",
+          "管理需求：是否需要条码/RFID、批次管理、先进先出？",
+          "系统集成：是否与SAP、MES对接？数据流向是什么？",
+          "预算范围：大致投入预算？",
+          "时间预期：期望什么时候上线？"
+        ],
 
         "background": {
-          "businessContext": "",
-          "currentChallenges": [],
-          "triggerEvent": "",
-          "currentSystems": [],
-          "expectedOutcomes": []
+          "businessContext": "宜昌长机科技处于数字化转型深水区，已建设5G+数字化车间，现提出仓储管理系统需求",
+          "currentChallenges": ["待确认"],
+          "triggerEvent": "客户主动提出需求",
+          "currentSystems": ["SAP S/4HANA Cloud", "5G+工业互联网", "DCMM数据管理体系"],
+          "expectedOutcomes": ["待确认"]
         },
 
-        "items": [],
+        "items": [
+          {
+            "id": "R001",
+            "category": "核心功能",
+            "description": "仓储管理系统",
+            "priority": "高",
+            "source": "客户明确提出",
+            "status": "待细化"
+          }
+        ],
         "painPoints": [],
-        "opportunities": [],
+        "opportunities": [
+          "客户已具备SAP和5G工厂基础，可形成系统集成方案",
+          "DCMM认证背景，数据治理需求可延伸"
+        ],
 
         "scope": {
-          "inScope": [],
+          "inScope": ["仓储管理系统 - 具体范围待确认"],
           "outOfScope": [],
           "phases": []
         },
 
         "constraints": {
           "budget": {
-            "total": "",
-            "paymentTerms": "",
-            "flexibility": ""
+            "total": "待确认",
+            "paymentTerms": "待确认",
+            "flexibility": "待确认"
           },
           "timeline": {
-            "expectedStart": "",
-            "expectedGoLive": "",
-            "hardDeadline": "",
-            "flexibility": ""
+            "expectedStart": "待确认",
+            "expectedGoLive": "待确认",
+            "hardDeadline": "待确认",
+            "flexibility": "待确认"
           }
         },
 
         "technicalRequirements": {
           "functionalNeeds": [],
-          "technicalNeeds": [],
-          "integrationNeeds": [],
+          "technicalNeeds": ["可能与SAP系统集成", "可能与5G数字化车间对接"],
+          "integrationNeeds": ["SAP S/4HANA Cloud（待确认）"],
           "securityNeeds": [],
           "nonFunctionalNeeds": []
         },
 
         "risksAndAssumptions": {
-          "risks": [],
-          "assumptions": [],
-          "dependencies": []
+          "risks": ["信息不足可能导致方案偏离实际需求"],
+          "assumptions": ["客户已有数字化基础，对新系统接受度较高"],
+          "dependencies": ["需进一步沟通获取详细信息"]
         },
 
         "solutionDirection": {
-          "overallApproach": "",
-          "recommendedType": "",
-          "nextSteps": []
+          "overallApproach": "建议先进行需求调研，明确业务场景后再制定方案",
+          "recommendedType": "待确认",
+          "nextSteps": [
+            "预约客户访谈，了解仓储管理现状和痛点",
+            "实地考察仓库布局和作业流程",
+            "确认与SAP、MES的集成需求",
+            "评估预算和时间预期"
+          ]
         },
 
         "openQuestions": []
