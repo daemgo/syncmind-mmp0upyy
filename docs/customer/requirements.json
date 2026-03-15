@@ -12,9 +12,9 @@
         "salesInput": {
           "salesPerson": "待确认",
           "overallAssessment": {
-            "customerIntent": "初期接触阶段，客户提出仓储管理系统需求，信息较少待进一步挖掘",
+            "customerIntent": "客户明确WMS+硬件自动化需求，预算30万，意向较清晰",
             "projectUrgency": "待评估",
-            "budgetSituation": "待确认",
+            "budgetSituation": "约30万（需确认是否含硬件）",
             "competitionStatus": "未知",
             "winProbability": "待评估",
             "keyObstacles": ["信息不完整，需进一步沟通"],
@@ -22,16 +22,16 @@
           },
           "keyPersons": [],
           "realNeeds": {
-            "explicitNeeds": ["仓储管理系统"],
+            "explicitNeeds": ["仓储管理系统", "自动出库设备", "智能仓库"],
             "implicitNeeds": ["可能与现有SAP系统打通", "可能与5G数字化车间集成"],
-            "suspectedNeeds": ["库存实时可视化", "出入库管理", "物料追溯"]
+            "suspectedNeeds": ["库存实时可视化", "出入库管理", "物料追溯", "硬件集成"]
           },
           "decisionFactors": {
             "primaryFactor": "待确认",
             "secondaryFactors": [],
             "dealBreakers": []
           },
-          "notes": "客户仅表达想做仓储管理系统，具体业务场景、功能范围、预算规模均需进一步沟通"
+          "notes": "预算约30万，需求包含WMS软件及自动化硬件（自动出库设备）。需确认硬件预算占比、仓库规模"
         },
 
         "pendingQuestions": [
@@ -55,8 +55,24 @@
           {
             "id": "R001",
             "category": "核心功能",
-            "description": "仓储管理系统",
+            "description": "仓储管理系统(WMS)",
             "priority": "高",
+            "source": "客户明确提出",
+            "status": "待细化"
+          },
+          {
+            "id": "R002",
+            "category": "硬件设备",
+            "description": "自动出库设备",
+            "priority": "高",
+            "source": "客户明确提出",
+            "status": "待细化"
+          },
+          {
+            "id": "R003",
+            "category": "智能硬件",
+            "description": "智能仓库相关设备",
+            "priority": "中",
             "source": "客户明确提出",
             "status": "待细化"
           }
@@ -75,7 +91,7 @@
 
         "constraints": {
           "budget": {
-            "total": "待确认",
+            "total": "约30万元",
             "paymentTerms": "待确认",
             "flexibility": "待确认"
           },
@@ -88,9 +104,9 @@
         },
 
         "technicalRequirements": {
-          "functionalNeeds": [],
-          "technicalNeeds": ["可能与SAP系统集成", "可能与5G数字化车间对接"],
-          "integrationNeeds": ["SAP S/4HANA Cloud（待确认）"],
+          "functionalNeeds": ["自动出库", "智能仓库管理"],
+          "technicalNeeds": ["可能与SAP系统集成", "可能与5G数字化车间对接", "硬件设备集成控制"],
+          "integrationNeeds": ["SAP S/4HANA Cloud（待确认）", "自动出库设备"],
           "securityNeeds": [],
           "nonFunctionalNeeds": []
         },
@@ -102,13 +118,13 @@
         },
 
         "solutionDirection": {
-          "overallApproach": "建议先进行需求调研，明确业务场景后再制定方案",
-          "recommendedType": "待确认",
+          "overallApproach": "30万预算需合理分配软件与硬件。建议明确硬件规格后确定方案范围",
+          "recommendedType": "WMS+轻量自动化",
           "nextSteps": [
-            "预约客户访谈，了解仓储管理现状和痛点",
-            "实地考察仓库布局和作业流程",
+            "确认30万预算构成（软件/硬件比例）",
+            "实地考察仓库，评估自动出库设备选型",
             "确认与SAP、MES的集成需求",
-            "评估预算和时间预期"
+            "明确智能仓库的具体定义和范围"
           ]
         },
 
